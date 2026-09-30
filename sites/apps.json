@@ -1,0 +1,21 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "16.35.1"
+    },
+    "hotel": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "02531cac41101fbb783961cf16a9f6ba0b25a30b",
+            "branch": "version-16"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    }
+}

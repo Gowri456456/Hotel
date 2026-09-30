@@ -1,0 +1,122 @@
+Traceback with variables (most recent call last):
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 120, in process_setup_stages
+    task.get("fn")(task.get("args"))
+      stages = [{'status': 'Updating global settings', 'fail_msg': 'Failed to update global settings', 'tasks': [{'fn': <function update_global_settings at 0x727702e126c0>, 'args': frappe.types.frappedict._dict{'currency': 'INR', 'country': 'India', 'timezone': 'Asia/Calcutta', 'language': 'English'}, 'fail_msg': 'Failed to update global settings', 'app_name': 'frappe'}]}, {'status': 'Wrapping up', 'fail_msg': 'Failed to complete setup', 'tasks': [{'fn': <function run_post_setup_complete at 0x727702e12820>, 'args': frappe.types.frappedict._dict{'currency': 'INR', 'country': 'India', 'timezone': 'Asia/Calcutta', 'language': 'English'}, 'fail_msg': 'Failed to complete setup'}]}]
+      user_input = {'currency': 'INR', 'country': 'India', 'timezone': 'Asia/Calcutta', 'language': 'English'}
+      is_background_task = False
+      capture = <function capture at 0x72770d715dd0>
+      setup_wizard_completed_apps = []
+      telemetry_enabled = False
+      current_task = {'fn': <function update_global_settings at 0x727702e126c0>, 'args': {'currency': 'INR', 'country': 'India', 'timezone': 'Asia/Calcutta', 'language': 'English'}, 'fail_msg': 'Failed to update global settings', 'app_name': 'frappe'}
+      idx = 0
+      stage = {'status': 'Updating global settings', 'fail_msg': 'Failed to update global settings', 'tasks': [{'fn': <function update_global_settings at 0x727702e126c0>, 'args': {'currency': 'INR', 'country': 'India', 'timezone': 'Asia/Calcutta', 'language': 'English'}, 'fail_msg': 'Failed to update global settings', 'app_name': 'frappe'}]}
+      task = {'fn': <function update_global_settings at 0x727702e126c0>, 'args': {'currency': 'INR', 'country': 'India', 'timezone': 'Asia/Calcutta', 'language': 'English'}, 'fail_msg': 'Failed to update global settings', 'app_name': 'frappe'}
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 186, in update_global_settings
+    update_system_settings(args)
+      args = {'currency': 'INR', 'country': 'India', 'timezone': 'Asia/Calcutta', 'language': 'English'}
+  File "apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 303, in update_system_settings
+    system_settings.save()
+      args = {'currency': 'INR', 'country': 'India', 'timezone': 'Asia/Calcutta', 'language': 'English'}
+      number_format = '#,##,###.##'
+      system_settings = System Settings (System Settings)
+  File "apps/frappe/frappe/model/document.py", line 557, in save
+    return self._save(*args, **kwargs)
+      self = System Settings (System Settings)
+      args = ()
+      kwargs = {}
+  File "apps/frappe/frappe/model/document.py", line 612, in _save
+    self.run_post_save_methods()
+      self = System Settings (System Settings)
+      ignore_permissions = None
+      ignore_version = None
+  File "apps/frappe/frappe/model/document.py", line 1454, in run_post_save_methods
+    self.run_method("on_update")
+      self = System Settings (System Settings)
+  File "apps/frappe/frappe/model/document.py", line 1260, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+      self = System Settings (System Settings)
+      method = 'on_update'
+      args = ()
+      kwargs = {}
+      fn = <function Document.run_method.<locals>.fn at 0x7277015b9b10>
+  File "apps/frappe/frappe/model/document.py", line 1661, in composer
+    return composed(self, method, *args, **kwargs)
+      self = System Settings (System Settings)
+      args = ()
+      kwargs = {}
+      hooks = [<function clear_doctype_notifications at 0x727709a94250>, <function process_workflow_actions at 0x727702fb5fe0>, <function attach_files_to_document at 0x72770e23cf60>, <function apply at 0x727702fe1590>, <function update_due_date at 0x727702fe1640>, <function apply_permissions_for_non_standard_user_type at 0x727709a63c10>, <function make_perm_log at 0x727702fe1a60>, <function update_doc_index at 0x7277015fe2a0>]
+      method = 'on_update'
+      doc_events = {'*': {'on_update': ['frappe.desk.notifications.clear_doctype_notifications', 'frappe.workflow.doctype.workflow_action.workflow_action.process_workflow_actions', 'frappe.core.doctype.file.utils.attach_files_to_document', 'frappe.automation.doctype.assignment_rule.assignment_rule.apply', 'frappe.automation.doctype.assignment_rule.assignment_rule.update_due_date', 'frappe.core.doctype.user_type.user_type.apply_permissions_for_non_standard_user_type', 'frappe.core.doctype.permission_log.permission_log.make_perm_log', 'frappe.search.sqlite_search.update_doc_index'], 'after_rename': ['frappe.desk.notifications.clear_doctype_notifications'], 'on_cancel': ['frappe.desk.notifications.clear_doctype_n..._contacts'], 'on_update': ['frappe.integrations.doctype.google_contacts.google_contacts.update_contacts_to_google_contacts']}, 'DocType': {'on_update': ['frappe.cache_manager.build_domain_restricted_doctype_cache']}, 'Page': {'on_update': ['frappe.cache_manager.build_domain_restricted_page_cache']}}
+      handler = 'frappe.search.sqlite_search.update_doc_index'
+      composed = <function Document.hook.<locals>.compose.<locals>.runner at 0x7277015b92d0>
+      compose = <function Document.hook.<locals>.compose at 0x7277015b9430>
+      f = <function Document.run_method.<locals>.fn at 0x7277015b9b10>
+  File "apps/frappe/frappe/model/document.py", line 1635, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+      self = System Settings (System Settings)
+      method = 'on_update'
+      args = ()
+      kwargs = {}
+      add_to_return_value = <function Document.hook.<locals>.add_to_return_value at 0x7277015ba090>
+      fn = <function Document.run_method.<locals>.fn at 0x7277015b9b10>
+      hooks = (<function clear_doctype_notifications at 0x727709a94250>, <function process_workflow_actions at 0x727702fb5fe0>, <function attach_files_to_document at 0x72770e23cf60>, <function apply at 0x727702fe1590>, <function update_due_date at 0x727702fe1640>, <function apply_permissions_for_non_standard_user_type at 0x727709a63c10>, <function make_perm_log at 0x727702fe1a60>, <function update_doc_index at 0x7277015fe2a0>)
+  File "apps/frappe/frappe/model/document.py", line 1257, in fn
+    return method_object(*args, **kwargs)
+      self = System Settings (System Settings)
+      args = ()
+      kwargs = {}
+      method_object = <bound method SystemSettings.on_update of <SystemSettings: doctype=System Settings System Settings>>
+      method = 'on_update'
+  File "apps/frappe/frappe/core/doctype/system_settings/system_settings.py", line 209, in on_update
+    self.set_defaults()
+      self = System Settings (System Settings)
+  File "apps/frappe/frappe/core/doctype/system_settings/system_settings.py", line 220, in set_defaults
+    frappe.db.set_default(df.fieldname, self.get(df.fieldname))
+      self = System Settings (System Settings)
+      set_default_language = <function set_default_language at 0x72770d6ddb10>
+      df = DocField (8ilth1pu5c)
+  File "apps/frappe/frappe/database/database.py", line 1152, in set_default
+    frappe.defaults.set_default(key, val, parent, parenttype)
+      key = ********
+      val = 'en'
+      parent = '__default'
+      parenttype = None
+  File "apps/frappe/frappe/defaults.py", line 171, in set_default
+    add_default(key, value, parent)
+      key = ********
+      value = 'en'
+      parent = '__default'
+      parenttype = None
+      table = "tabDefaultValue"
+      current_value = []
+  File "apps/frappe/frappe/defaults.py", line 190, in add_default
+    d.insert(ignore_permissions=True)
+      key = ********
+      value = 'en'
+      parent = '__default'
+      parenttype = None
+      d = DefaultValue (unsaved)
+  File "apps/frappe/frappe/model/document.py", line 475, in insert
+    self.set_user_and_timestamp()
+      self = DefaultValue (unsaved)
+      ignore_permissions = True
+      ignore_links = None
+      ignore_if_duplicate = False
+      ignore_mandatory = None
+      set_name = None
+      set_child_names = True
+  File "apps/frappe/frappe/model/document.py", line 799, in set_user_and_timestamp
+    self.modified = now()
+      self = DefaultValue (unsaved)
+  File "apps/frappe/frappe/utils/data.py", line 425, in now
+    return now_datetime().strftime(DATETIME_FORMAT)
+  File "apps/frappe/frappe/utils/data.py", line 374, in now_datetime
+    return datetime.datetime.now(ZoneInfo(get_system_timezone())).replace(tzinfo=None)
+  File "/usr/lib/python3.14/zoneinfo/_common.py", line 29, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+      key = ********
+      resources = <module 'importlib.resources' from '/usr/lib/python3.14/importlib/resources/__init__.py'>
+      components = ['Asia', 'Calcutta']
+      package_name = 'tzdata.zoneinfo.Asia'
+      resource_name = 'Calcutta'
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key Asia/Calcutta'{"currency": "INR", "country": "India", "timezone": "Asia/Calcutta", "language": "English"}

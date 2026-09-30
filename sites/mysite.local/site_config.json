@@ -1,0 +1,10 @@
+{
+ "db_name": "_adc7c35caaee668c",
+ "db_password": "Aof4q0T9yZoUjqEK",
+ "db_type": "mariadb",
+ "db_user": "_adc7c35caaee668c",
+ "installed_apps": [
+  "frappe",
+  "hotel"
+ ]
+}
