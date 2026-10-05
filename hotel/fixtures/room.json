@@ -1,0 +1,68 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Room",
+  "floor": 1,
+  "modified": "2026-09-30 09:52:35.594787",
+  "name": "105",
+  "price_per_night": 1000.0,
+  "room_number": "105",
+  "room_type": "Single",
+  "status": "Booked"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Room",
+  "floor": 1,
+  "modified": "2026-09-30 09:52:53.874114",
+  "name": "102",
+  "price_per_night": 1000.0,
+  "room_number": "102",
+  "room_type": "Single",
+  "status": "Cleaning"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Room",
+  "floor": 3,
+  "modified": "2026-09-30 11:34:19.920271",
+  "name": "108",
+  "price_per_night": 3000.0,
+  "room_number": "108",
+  "room_type": "Deluxe",
+  "status": "Available"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Room",
+  "floor": 3,
+  "modified": "2026-09-30 11:34:41.904686",
+  "name": "106",
+  "price_per_night": 2000.0,
+  "room_number": "106",
+  "room_type": "Suite",
+  "status": "Available"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Room",
+  "floor": 4,
+  "modified": "2026-09-30 14:02:06.620083",
+  "name": "111",
+  "price_per_night": 500.0,
+  "room_number": "111",
+  "room_type": "Double",
+  "status": "Available"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Room",
+  "floor": 1,
+  "modified": "2026-09-30 09:32:21.930571",
+  "name": "101",
+  "price_per_night": 1000.0,
+  "room_number": "101",
+  "room_type": "Single",
+  "status": "Available"
+ }
+]
