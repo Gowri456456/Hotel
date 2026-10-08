@@ -1,0 +1,44 @@
+2026-10-07 10:23:06,015 INFO ipython === bench console session ===
+2026-10-07 10:23:06,017 INFO ipython frappe.db.set_value("Series", "BOOK-", 5)
+2026-10-07 10:23:06,017 INFO ipython frappe.db.set_value("Series", "BOOK-", "current", 5)
+2026-10-07 10:23:06,017 INFO ipython frappe.db.sql("UPDATE `tabSeries` SET current = 5 WHERE name = 'BOOK-'")
+2026-10-07 10:23:06,017 INFO ipython frappe.db.commit()
+2026-10-07 10:23:06,017 INFO ipython frappe.db.sql("SELECT name, current FROM `tabSeries` WHERE name = 'BOOK-'")
+2026-10-07 10:23:06,018 INFO ipython frappe.db.sql("SELECT name, current FROM `tabSeries`")
+2026-10-07 10:23:06,018 INFO ipython In [6]: frappe.db.sql("SELECT name, current FROM `tabSeries`")
+Out[6]: (('EV', 1),)
+
+In [7]: 
+2026-10-07 10:23:06,018 INFO ipython In [6]: frappe.db.sql("SELECT name, current FROM `tabSeries`")
+Out[6]: (('EV', 1),)
+
+In [7]: 
+2026-10-07 10:23:06,018 INFO ipython In [6]: frappe.db.sql("SELECT name, current FROM `tabSeries`")
+Out[6]: (('EV', 1),)
+
+In [7]: 
+2026-10-07 10:23:06,018 INFO ipython frappe.db.sql("SELECT name, current FROM `tabSeries`")
+2026-10-07 10:23:06,018 INFO ipython frappe.db.sql("INSERT INTO `tabSeries` (name, current) VALUES ('BOOK-', 5)")
+2026-10-07 10:23:06,018 INFO ipython === session end ===
+2026-10-07 10:35:02,514 INFO ipython === bench console session ===
+2026-10-07 10:35:02,515 INFO ipython frappe.db.sql("SELECT name, current FROM `tabSeries` WHERE name='BOOK-'")
+2026-10-07 10:35:02,515 INFO ipython frappe.db.sql("INSERT INTO `tabSeries` (name, current) VALUES ('BOOK-', 5)")
+frappe.db.commit()
+2026-10-07 10:35:02,515 INFO ipython In [1]: frappe.db.sql("SELECT name, current FROM `tabSeries` WHERE name='BOOK-'")
+Out[1]: ()
+
+In [2]: frappe.db.sql("INSERT INTO `tabSeries` (name, current) VALUES ('BOOK-', 5)")
+   ...: frappe.db.commit()
+
+In [3]: exit()
+2026-10-07 10:35:02,515 INFO ipython === session end ===
+2026-10-07 10:37:46,039 INFO ipython === bench console session ===
+2026-10-07 10:37:46,039 INFO ipython frappe.db.sql("SELECT name, current FROM `tabSeries` WHERE name='BOOK-'")
+2026-10-07 10:37:46,039 INFO ipython === session end ===
+2026-10-08 09:28:20,283 INFO ipython === bench console session ===
+2026-10-08 09:28:20,286 INFO ipython tail -n 50 sites/mysite.local/logs/web.error.log
+2026-10-08 09:28:20,287 INFO ipython === session end ===
+2026-10-08 10:01:52,322 INFO ipython === bench console session ===
+2026-10-08 10:01:52,327 INFO ipython frappe.db.set_value("DocType", "Rental Booking", "has_web_view", 0)
+frappe.db.commit()
+2026-10-08 10:01:52,327 INFO ipython === session end ===

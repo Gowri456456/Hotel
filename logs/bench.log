@@ -168,3 +168,488 @@
 2026-09-30 15:17:38,374 INFO /home/gowri/.local/bin/bench export-fixtures
 2026-09-30 15:19:04,933 INFO /home/gowri/.local/bin/bench export-fixtures
 2026-09-30 15:21:23,217 INFO /home/gowri/.local/bin/bench export-fixtures
+2026-09-30 16:18:50,144 INFO /home/gowri/.local/bin/bench migrate
+2026-09-30 16:19:03,489 INFO /home/gowri/.local/bin/bench restart
+2026-09-30 16:19:08,317 INFO /home/gowri/.local/bin/bench start
+2026-09-30 16:19:08,999 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-09-30 16:19:09,006 INFO /home/gowri/.local/bin/bench watch
+2026-09-30 16:19:09,013 INFO /home/gowri/.local/bin/bench worker
+2026-09-30 16:19:09,016 INFO /home/gowri/.local/bin/bench schedule
+2026-09-30 16:19:09,019 INFO /home/gowri/.local/bin/bench socketio
+2026-09-30 16:27:59,727 INFO /home/gowri/.local/bin/bench --site mysite.local migrate
+2026-09-30 16:28:13,946 INFO /home/gowri/.local/bin/bench restart
+2026-09-30 16:28:19,372 INFO /home/gowri/.local/bin/bench start
+2026-09-30 16:28:19,961 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-09-30 16:28:19,984 INFO /home/gowri/.local/bin/bench worker
+2026-09-30 16:28:20,000 INFO /home/gowri/.local/bin/bench socketio
+2026-09-30 16:28:20,006 INFO /home/gowri/.local/bin/bench schedule
+2026-09-30 16:28:20,006 INFO /home/gowri/.local/bin/bench watch
+2026-09-30 16:31:00,420 INFO /home/gowri/.local/bin/bench --site mysite.local migrate
+2026-09-30 16:31:05,356 INFO /home/gowri/.local/bin/bench restart
+2026-09-30 16:31:08,604 INFO /home/gowri/.local/bin/bench start
+2026-09-30 16:31:09,154 INFO /home/gowri/.local/bin/bench schedule
+2026-09-30 16:31:09,169 INFO /home/gowri/.local/bin/bench socketio
+2026-09-30 16:31:09,223 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-09-30 16:31:09,270 INFO /home/gowri/.local/bin/bench worker
+2026-09-30 16:31:09,272 INFO /home/gowri/.local/bin/bench watch
+2026-09-30 16:35:20,211 INFO /home/gowri/.local/bin/bench start
+2026-09-30 16:35:20,494 INFO /home/gowri/.local/bin/bench socketio
+2026-09-30 16:35:20,495 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-09-30 16:35:20,496 INFO /home/gowri/.local/bin/bench watch
+2026-09-30 16:35:20,498 INFO /home/gowri/.local/bin/bench worker
+2026-09-30 16:35:20,502 INFO /home/gowri/.local/bin/bench schedule
+2026-09-30 16:37:19,416 INFO /home/gowri/.local/bin/bench --site mysite.local migrate
+2026-09-30 16:37:22,885 INFO /home/gowri/.local/bin/bench start
+2026-09-30 16:37:23,156 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-09-30 16:37:23,157 INFO /home/gowri/.local/bin/bench watch
+2026-09-30 16:37:23,166 INFO /home/gowri/.local/bin/bench socketio
+2026-09-30 16:37:23,170 INFO /home/gowri/.local/bin/bench worker
+2026-09-30 16:37:23,175 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 09:22:10,099 INFO /home/gowri/.local/bin/bench migrate
+2026-10-01 09:22:17,730 INFO /home/gowri/.local/bin/bench start
+2026-10-01 09:22:18,495 INFO /home/gowri/.local/bin/bench watch
+2026-10-01 09:22:18,505 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 09:22:18,518 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 09:22:18,530 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 09:22:18,564 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 09:55:01,241 INFO /home/gowri/.local/bin/bench migrate
+2026-10-01 09:55:06,492 INFO /home/gowri/.local/bin/bench start
+2026-10-01 09:55:07,148 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 09:55:07,168 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 09:55:07,181 INFO /home/gowri/.local/bin/bench watch
+2026-10-01 09:55:07,199 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 09:55:07,210 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 09:59:39,397 INFO /home/gowri/.local/bin/bench new-app Car_rental
+2026-10-01 09:59:39,418 LOG creating new app car_rental
+2026-10-01 10:00:43,395 LOG Installing car_rental
+2026-10-01 10:00:43,398 DEBUG cd /home/gowri/my-bench && uv pip install --quiet -e /home/gowri/my-bench/apps/car_rental  --python /home/gowri/my-bench/env/bin/python
+2026-10-01 10:00:44,942 DEBUG bench build --app car_rental
+2026-10-01 10:00:45,275 INFO /home/gowri/.local/bin/bench build --app car_rental
+2026-10-01 10:01:29,638 INFO /home/gowri/.local/bin/bench --site mysite.local install-app car_rental
+2026-10-01 10:01:44,833 INFO /home/gowri/.local/bin/bench use mysite.local
+2026-10-01 10:02:00,882 INFO /home/gowri/.local/bin/bench migrate
+2026-10-01 10:02:23,911 INFO /home/gowri/.local/bin/bench start
+2026-10-01 10:02:24,369 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 10:02:24,379 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 10:02:24,382 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 10:02:24,386 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 10:02:24,404 INFO /home/gowri/.local/bin/bench watch
+2026-10-01 10:28:19,650 INFO /home/gowri/.local/bin/bench --site mysite.local set-config developer-mode 1
+2026-10-01 10:51:41,114 INFO /home/gowri/.local/bin/bench migrate
+2026-10-01 10:51:44,900 INFO /home/gowri/.local/bin/bench start
+2026-10-01 10:51:46,190 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 10:51:46,193 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 10:51:46,195 INFO /home/gowri/.local/bin/bench watch
+2026-10-01 10:51:46,202 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 10:51:46,214 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 12:00:05,127 INFO /home/gowri/.local/bin/bench --verbose --site all backup
+2026-10-01 12:44:52,076 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 12:45:00,618 INFO /home/gowri/.local/bin/bench migrate
+2026-10-01 12:45:15,133 INFO /home/gowri/.local/bin/bench restart
+2026-10-01 12:45:20,108 INFO /home/gowri/.local/bin/bench start
+2026-10-01 12:45:20,930 INFO /home/gowri/.local/bin/bench watch
+2026-10-01 12:45:20,931 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 12:45:20,936 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 12:45:20,948 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 12:45:20,962 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 13:11:36,837 INFO /home/gowri/.local/bin/bench migrate
+2026-10-01 13:11:43,194 INFO /home/gowri/.local/bin/bench restart
+2026-10-01 13:11:46,977 INFO /home/gowri/.local/bin/bench start
+2026-10-01 13:11:47,696 INFO /home/gowri/.local/bin/bench watch
+2026-10-01 13:11:47,705 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 13:11:47,711 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 13:11:47,722 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 13:11:47,766 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 14:32:31,819 INFO /home/gowri/.local/bin/bench migrate
+2026-10-01 14:32:36,387 INFO /home/gowri/.local/bin/bench start
+2026-10-01 14:32:36,971 INFO /home/gowri/.local/bin/bench watch
+2026-10-01 14:32:36,974 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 14:32:36,981 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 14:32:36,983 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 14:32:37,369 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 14:38:45,757 INFO /home/gowri/.local/bin/bench --site mysite.local migrate
+2026-10-01 14:38:54,185 INFO /home/gowri/.local/bin/bench restart
+2026-10-01 14:39:01,829 INFO /home/gowri/.local/bin/bench start
+2026-10-01 14:39:02,411 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 14:39:02,475 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 14:39:02,485 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 14:39:02,486 INFO /home/gowri/.local/bin/bench watch
+2026-10-01 14:39:02,487 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 16:02:26,375 INFO /home/gowri/.local/bin/bench migrate
+2026-10-01 16:02:35,100 INFO /home/gowri/.local/bin/bench restart
+2026-10-01 16:02:38,123 INFO /home/gowri/.local/bin/bench start
+2026-10-01 16:02:38,741 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-01 16:02:38,766 INFO /home/gowri/.local/bin/bench schedule
+2026-10-01 16:02:38,772 INFO /home/gowri/.local/bin/bench worker
+2026-10-01 16:02:38,775 INFO /home/gowri/.local/bin/bench socketio
+2026-10-01 16:02:38,781 INFO /home/gowri/.local/bin/bench watch
+2026-10-04 20:05:09,279 INFO /home/gowri/.local/bin/bench start
+2026-10-04 20:05:10,796 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-04 20:05:10,796 INFO /home/gowri/.local/bin/bench socketio
+2026-10-04 20:05:10,823 INFO /home/gowri/.local/bin/bench watch
+2026-10-04 20:05:10,824 INFO /home/gowri/.local/bin/bench worker
+2026-10-04 20:05:10,833 INFO /home/gowri/.local/bin/bench schedule
+2026-10-05 09:22:21,080 INFO /home/gowri/.local/bin/bench start
+2026-10-05 09:22:21,750 INFO /home/gowri/.local/bin/bench socketio
+2026-10-05 09:22:21,770 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-05 09:22:21,836 INFO /home/gowri/.local/bin/bench schedule
+2026-10-05 09:22:21,904 INFO /home/gowri/.local/bin/bench worker
+2026-10-05 09:22:21,913 INFO /home/gowri/.local/bin/bench watch
+2026-10-05 10:23:28,599 INFO /home/gowri/.local/bin/bench list-apps
+2026-10-05 11:26:38,652 INFO /home/gowri/.local/bin/bench migrate
+2026-10-05 11:26:48,393 INFO /home/gowri/.local/bin/bench start
+2026-10-05 11:26:53,927 INFO /home/gowri/.local/bin/bench start
+2026-10-05 11:27:03,342 INFO /home/gowri/.local/bin/bench migrate
+2026-10-05 11:27:22,616 INFO /home/gowri/.local/bin/bench migrate
+2026-10-05 11:27:46,604 INFO /home/gowri/.local/bin/bench restart
+2026-10-05 11:27:49,951 INFO /home/gowri/.local/bin/bench start
+2026-10-05 11:28:03,200 INFO /home/gowri/.local/bin/bench clear-cache
+2026-10-05 12:00:05,471 INFO /home/gowri/.local/bin/bench --verbose --site all backup
+2026-10-05 12:23:41,653 INFO /home/gowri/.local/bin/bench migrate
+2026-10-05 12:24:00,634 INFO /home/gowri/.local/bin/bench restart
+2026-10-05 12:24:07,560 INFO /home/gowri/.local/bin/bench start
+2026-10-05 12:24:39,510 INFO /home/gowri/.local/bin/bench clear-cache
+2026-10-05 12:24:50,188 INFO /home/gowri/.local/bin/bench migrate
+2026-10-05 12:24:56,388 INFO /home/gowri/.local/bin/bench restart
+2026-10-05 12:25:02,261 INFO /home/gowri/.local/bin/bench start
+2026-10-05 12:25:03,278 INFO /home/gowri/.local/bin/bench socketio
+2026-10-05 12:25:03,270 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-05 12:25:03,286 INFO /home/gowri/.local/bin/bench schedule
+2026-10-05 12:25:03,274 INFO /home/gowri/.local/bin/bench worker
+2026-10-05 12:25:03,358 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 09:16:51,341 INFO /home/gowri/.local/bin/bench start
+2026-10-06 09:16:52,266 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 09:16:52,267 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 09:16:52,288 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 09:16:52,293 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 09:16:52,340 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 09:23:54,361 INFO /home/gowri/.local/bin/bench new-app Employee_Management_System
+2026-10-06 09:23:54,375 LOG creating new app employee_management_system
+2026-10-06 09:25:55,500 LOG Installing employee_management_system
+2026-10-06 09:25:55,502 DEBUG cd /home/gowri/my-bench && uv pip install --quiet -e /home/gowri/my-bench/apps/employee_management_system  --python /home/gowri/my-bench/env/bin/python
+2026-10-06 09:25:56,537 DEBUG bench build --app employee_management_system
+2026-10-06 09:25:56,752 INFO /home/gowri/.local/bin/bench build --app employee_management_system
+2026-10-06 09:26:56,160 INFO /home/gowri/.local/bin/bench --site mysite.local install-app Employee_Management_System
+2026-10-06 09:27:39,505 INFO /home/gowri/.local/bin/bench --site mysite.local install-app employee_management_system
+2026-10-06 09:28:04,172 INFO /home/gowri/.local/bin/bench start
+2026-10-06 09:28:04,871 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 09:28:04,891 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 09:28:04,900 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 09:28:04,913 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 09:28:04,929 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 11:45:06,254 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 11:45:17,868 INFO /home/gowri/.local/bin/bench clear-cache
+2026-10-06 11:45:23,144 INFO /home/gowri/.local/bin/bench restart
+2026-10-06 11:45:28,588 INFO /home/gowri/.local/bin/bench start
+2026-10-06 11:45:28,879 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 11:45:28,883 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 11:45:28,883 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 11:45:28,888 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 11:45:28,899 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 11:47:30,398 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 11:47:35,066 INFO /home/gowri/.local/bin/bench restart
+2026-10-06 11:47:39,486 INFO /home/gowri/.local/bin/bench start
+2026-10-06 11:47:39,737 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 11:47:39,742 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 11:47:39,748 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 11:47:39,753 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 11:47:39,758 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 11:58:55,948 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 11:58:59,190 INFO /home/gowri/.local/bin/bench start
+2026-10-06 11:58:59,450 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 11:58:59,456 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 11:58:59,459 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 11:58:59,472 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 11:58:59,474 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 12:00:01,747 INFO /home/gowri/.local/bin/bench --verbose --site all backup
+2026-10-06 12:02:28,536 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 12:02:33,877 INFO /home/gowri/.local/bin/bench start
+2026-10-06 12:02:34,136 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 12:02:34,142 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 12:02:34,142 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 12:02:34,152 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 12:02:34,198 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 12:10:34,240 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 12:10:43,825 INFO /home/gowri/.local/bin/bench restart
+2026-10-06 12:10:48,118 INFO /home/gowri/.local/bin/bench start
+2026-10-06 12:10:48,686 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 12:10:48,700 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 12:10:48,708 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 12:10:48,714 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 12:10:48,736 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 12:25:18,737 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 12:25:27,966 INFO /home/gowri/.local/bin/bench restart
+2026-10-06 12:25:34,244 INFO /home/gowri/.local/bin/bench start
+2026-10-06 12:25:34,824 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 12:25:34,825 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 12:25:34,835 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 12:25:34,837 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 12:25:34,859 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 12:29:46,945 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 12:30:03,087 INFO /home/gowri/.local/bin/bench restart
+2026-10-06 12:31:13,006 INFO /home/gowri/.local/bin/bench start
+2026-10-06 12:31:13,647 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 12:31:13,650 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 12:31:13,655 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 12:31:13,694 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 12:31:13,695 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 14:09:21,377 INFO /home/gowri/.local/bin/bench --site all list-apps
+2026-10-06 14:09:33,210 INFO /home/gowri/.local/bin/bench --site all list-apps
+2026-10-06 14:09:43,120 INFO /home/gowri/.local/bin/bench list apps
+2026-10-06 14:09:51,045 INFO /home/gowri/.local/bin/bench list-apps
+2026-10-06 14:10:37,006 INFO /home/gowri/.local/bin/bench --site mysite.localhost uninstall-app employee_management_system --dry-run
+2026-10-06 14:10:53,254 INFO /home/gowri/.local/bin/bench --site mysite.local uninstall-app employee_management_system --dry-run
+2026-10-06 14:12:08,469 INFO /home/gowri/.local/bin/bench --site mysite.local uninstall-app employee_management_system
+2026-10-06 14:14:48,868 INFO /home/gowri/.local/bin/bench remove-app employee_management_system
+2026-10-06 14:14:49,066 INFO /home/gowri/.local/bin/bench --site all list-apps --format json
+2026-10-06 14:14:50,830 INFO /home/gowri/.local/bin/bench --site my.local list-apps
+2026-10-06 14:14:53,300 WARNING /home/gowri/.local/bin/bench remove-app employee_management_system executed with exit code 1
+2026-10-06 14:14:57,520 INFO /home/gowri/.local/bin/bench remove-app employee_management_system
+2026-10-06 14:14:58,110 INFO /home/gowri/.local/bin/bench --site all list-apps --format json
+2026-10-06 14:15:00,698 INFO /home/gowri/.local/bin/bench --site my.local list-apps
+2026-10-06 14:15:02,235 WARNING /home/gowri/.local/bin/bench remove-app employee_management_system executed with exit code 1
+2026-10-06 14:16:14,226 INFO /home/gowri/.local/bin/bench --site mysite.local list-apps
+2026-10-06 14:16:52,591 INFO /home/gowri/.local/bin/bench --site mysite.local uninstall-app employee_management_system
+2026-10-06 14:17:45,083 INFO /home/gowri/.local/bin/bench start
+2026-10-06 14:17:45,641 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 14:17:45,665 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 14:17:45,677 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 14:17:45,679 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 14:17:45,686 INFO /home/gowri/.local/bin/bench watch
+2026-10-06 14:18:19,410 INFO /home/gowri/.local/bin/bench --site mysite.local uninstall-app employee_management_system
+2026-10-06 14:18:57,422 INFO /home/gowri/.local/bin/bench --site mysite.local list-apps
+2026-10-06 14:19:24,347 INFO /home/gowri/.local/bin/bench remove-app employee_management_system
+2026-10-06 14:19:24,580 INFO /home/gowri/.local/bin/bench --site all list-apps --format json
+2026-10-06 14:19:26,340 INFO /home/gowri/.local/bin/bench --site my.local list-apps
+2026-10-06 14:19:27,812 WARNING /home/gowri/.local/bin/bench remove-app employee_management_system executed with exit code 1
+2026-10-06 16:16:27,421 INFO /home/gowri/.local/bin/bench start
+2026-10-06 16:16:34,038 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 16:16:55,008 INFO /home/gowri/.local/bin/bench restart
+2026-10-06 16:17:02,731 INFO /home/gowri/.local/bin/bench start
+2026-10-06 16:17:25,607 INFO /home/gowri/.local/bin/bench migrate
+2026-10-06 16:17:39,091 INFO /home/gowri/.local/bin/bench restart
+2026-10-06 16:17:43,377 INFO /home/gowri/.local/bin/bench start
+2026-10-06 16:17:43,909 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-06 16:17:43,984 INFO /home/gowri/.local/bin/bench schedule
+2026-10-06 16:17:44,026 INFO /home/gowri/.local/bin/bench socketio
+2026-10-06 16:17:44,017 INFO /home/gowri/.local/bin/bench worker
+2026-10-06 16:17:44,065 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 09:16:24,082 INFO /home/gowri/.local/bin/bench start
+2026-10-07 09:16:25,706 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 09:16:25,756 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 09:16:25,816 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 09:16:26,392 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 09:16:26,568 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 09:27:57,760 INFO /home/gowri/.local/bin/bench use mysite.local
+2026-10-07 09:28:06,265 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 09:28:12,629 INFO /home/gowri/.local/bin/bench start
+2026-10-07 09:28:13,840 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 09:28:13,853 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 09:28:13,854 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 09:28:13,855 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 09:28:13,943 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 10:17:21,920 INFO /home/gowri/.local/bin/bench --site mysite.local console
+2026-10-07 10:23:13,591 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 10:23:20,734 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 10:23:27,660 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:23:28,221 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 10:23:28,223 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 10:23:28,245 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 10:23:28,246 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 10:23:28,263 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 10:32:30,356 INFO /home/gowri/.local/bin/bench --site mysite.local console
+2026-10-07 10:35:09,997 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 10:35:32,495 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:35:41,326 INFO /home/gowri/.local/bin/bench clear-cache
+2026-10-07 10:35:50,241 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 10:35:57,920 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:37:24,363 INFO /home/gowri/.local/bin/bench --site mysite.local console
+2026-10-07 10:39:46,124 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 10:41:05,842 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:41:10,543 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 10:41:17,899 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:44:24,087 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 10:44:43,264 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 10:44:47,946 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:45:26,840 INFO /home/gowri/.local/bin/bench stop
+2026-10-07 10:46:18,457 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 10:46:40,540 INFO /home/gowri/.local/bin/bench retart
+2026-10-07 10:46:47,687 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 10:46:55,028 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:47:33,827 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 10:47:43,833 INFO /home/gowri/.local/bin/bench status
+2026-10-07 10:47:53,680 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:48:14,929 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 10:48:30,112 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 10:48:35,143 INFO /home/gowri/.local/bin/bench start
+2026-10-07 10:48:35,809 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 10:48:35,813 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 10:48:35,816 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 10:48:35,839 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 10:48:35,868 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 12:00:04,427 INFO /home/gowri/.local/bin/bench --verbose --site all backup
+2026-10-07 12:44:06,921 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 12:44:19,537 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 12:44:25,348 INFO /home/gowri/.local/bin/bench start
+2026-10-07 12:44:25,694 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 12:44:25,715 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 12:44:25,734 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 12:44:25,737 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 12:44:25,737 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 12:48:08,004 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 12:48:15,263 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 12:48:22,167 INFO /home/gowri/.local/bin/bench start
+2026-10-07 12:48:22,441 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 12:48:22,463 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 12:48:22,500 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 12:48:22,508 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 12:48:22,523 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 12:51:03,194 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 12:51:13,817 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 12:51:17,434 INFO /home/gowri/.local/bin/bench start
+2026-10-07 12:51:17,749 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 12:51:17,756 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 12:51:17,763 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 12:51:17,770 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 12:51:17,775 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 14:30:49,110 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 14:30:58,629 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 14:31:06,270 INFO /home/gowri/.local/bin/bench start
+2026-10-07 14:31:07,146 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 14:31:07,192 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 14:31:07,234 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 14:31:07,257 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 14:31:07,302 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 14:47:49,061 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 14:47:56,547 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 14:48:02,358 INFO /home/gowri/.local/bin/bench start
+2026-10-07 14:48:02,906 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 14:48:02,906 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 14:48:02,912 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 14:48:02,928 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 14:48:02,934 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 15:27:27,558 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 15:27:55,652 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 15:28:13,055 INFO /home/gowri/.local/bin/bench start
+2026-10-07 15:28:13,713 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 15:28:13,718 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 15:28:13,720 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 15:28:13,721 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 15:28:13,723 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 15:41:24,982 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 15:41:33,256 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 15:41:37,936 INFO /home/gowri/.local/bin/bench start
+2026-10-07 15:41:38,626 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 15:41:38,662 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 15:41:38,676 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 15:41:38,699 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 15:41:38,703 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 15:44:10,380 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 15:44:15,685 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 15:44:19,016 INFO /home/gowri/.local/bin/bench start
+2026-10-07 15:44:19,538 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 15:44:19,548 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 15:44:19,550 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 15:44:19,562 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 15:44:19,562 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 15:46:00,798 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 15:46:10,147 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 15:46:14,437 INFO /home/gowri/.local/bin/bench start
+2026-10-07 15:46:15,067 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 15:46:15,136 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 15:46:15,143 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 15:46:15,168 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 15:46:15,183 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 15:47:56,715 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 15:48:08,062 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 15:48:14,749 INFO /home/gowri/.local/bin/bench start
+2026-10-07 15:48:17,744 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 15:48:17,759 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 15:48:17,776 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 15:48:17,788 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 15:48:17,793 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 17:02:18,440 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 17:02:25,561 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 17:02:32,415 INFO /home/gowri/.local/bin/bench start
+2026-10-07 17:02:32,665 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 17:02:32,670 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 17:02:32,675 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 17:02:32,678 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 17:02:32,682 INFO /home/gowri/.local/bin/bench worker
+2026-10-07 17:04:18,942 INFO /home/gowri/.local/bin/bench migrate
+2026-10-07 17:04:22,002 INFO /home/gowri/.local/bin/bench restart
+2026-10-07 17:04:24,122 INFO /home/gowri/.local/bin/bench start
+2026-10-07 17:04:24,406 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-07 17:04:24,407 INFO /home/gowri/.local/bin/bench watch
+2026-10-07 17:04:24,429 INFO /home/gowri/.local/bin/bench schedule
+2026-10-07 17:04:24,429 INFO /home/gowri/.local/bin/bench socketio
+2026-10-07 17:04:24,434 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 09:16:04,307 INFO /home/gowri/.local/bin/bench start
+2026-10-08 09:16:05,324 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 09:16:05,341 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 09:16:05,344 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 09:16:05,367 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 09:16:05,448 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 09:21:26,328 INFO /home/gowri/.local/bin/bench migrate
+2026-10-08 09:22:36,377 INFO /home/gowri/.local/bin/bench restart
+2026-10-08 09:23:17,014 INFO /home/gowri/.local/bin/bench start
+2026-10-08 09:23:17,639 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 09:23:17,645 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 09:23:17,654 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 09:23:17,657 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 09:23:17,658 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 09:27:21,112 INFO /home/gowri/.local/bin/bench --site mysite.local console
+2026-10-08 09:48:10,946 INFO /home/gowri/.local/bin/bench start
+2026-10-08 09:48:11,729 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 09:48:11,733 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 09:48:11,749 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 09:48:11,750 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 09:48:11,777 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 09:49:50,520 INFO /home/gowri/.local/bin/bench status
+2026-10-08 09:50:07,271 INFO /home/gowri/.local/bin/bench status
+2026-10-08 09:50:39,191 INFO /home/gowri/.local/bin/bench start
+2026-10-08 09:50:39,913 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 09:50:39,916 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 09:50:39,923 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 09:50:39,924 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 09:50:39,953 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 09:51:31,735 INFO /home/gowri/.local/bin/bench --site mysite.local clear-cache
+2026-10-08 09:51:55,720 INFO /home/gowri/.local/bin/bench migrate
+2026-10-08 09:52:05,986 INFO /home/gowri/.local/bin/bench restart
+2026-10-08 09:52:12,931 INFO /home/gowri/.local/bin/bench start
+2026-10-08 09:52:13,391 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 09:52:13,396 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 09:52:13,406 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 09:52:13,406 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 09:52:13,409 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 09:53:18,124 INFO /home/gowri/.local/bin/bench --site mysite.local show-pending-jobs
+2026-10-08 09:54:31,230 INFO /home/gowri/.local/bin/bench start
+2026-10-08 09:54:31,759 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 09:54:31,764 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 09:54:31,782 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 09:54:31,782 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 09:54:31,787 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 09:59:25,649 INFO /home/gowri/.local/bin/bench --site mysite.local set-config serve_default_site true
+2026-10-08 10:00:10,408 INFO /home/gowri/.local/bin/bench --site mysite.local migrate
+2026-10-08 10:00:25,599 INFO /home/gowri/.local/bin/bench --site mysite.local clear-cache
+2026-10-08 10:00:32,871 INFO /home/gowri/.local/bin/bench start
+2026-10-08 10:00:33,529 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 10:00:33,535 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 10:00:33,547 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 10:00:33,549 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 10:00:33,556 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 10:01:26,354 INFO /home/gowri/.local/bin/bench --site mysite.local console
+2026-10-08 10:02:05,323 INFO /home/gowri/.local/bin/bench --site mysite.local clear-cache
+2026-10-08 10:02:07,281 INFO /home/gowri/.local/bin/bench start
+2026-10-08 10:02:07,798 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 10:02:07,806 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 10:02:07,810 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 10:02:07,810 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 10:02:07,825 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 10:21:27,306 INFO /home/gowri/.local/bin/bench start
+2026-10-08 10:21:28,209 INFO /home/gowri/.local/bin/bench schedule
+2026-10-08 10:21:28,246 INFO /home/gowri/.local/bin/bench watch
+2026-10-08 10:21:28,257 INFO /home/gowri/.local/bin/bench worker
+2026-10-08 10:21:28,259 INFO /home/gowri/.local/bin/bench socketio
+2026-10-08 10:21:28,340 INFO /home/gowri/.local/bin/bench serve --port 8000
+2026-10-08 10:21:50,272 INFO /home/gowri/.local/bin/bench export-fixtures

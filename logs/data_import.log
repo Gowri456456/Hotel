@@ -1,0 +1,882 @@
+2026-10-06 12:23:49,013 ERROR data_import Data Import Leave Type Import on 2026-10-06 12:23:37.766196: row(s) [3] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 766, in db_insert
+    name = frappe.db.sql(
+    	"""INSERT INTO `tab{doctype}` ({columns})
+    ...<7 lines>...
+    	list(d.values()),
+    )
+  File "/home/gowri/my-bench/apps/frappe/frappe/database/database.py", line 272, in sql
+    self.execute_query(query, values)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/database/database.py", line 372, in execute_query
+    return self._cursor.execute(query, values)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/env/lib/python3.14/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/home/gowri/my-bench/env/lib/python3.14/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "/home/gowri/my-bench/env/lib/python3.14/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.IntegrityError: (1062, "Duplicate entry '12' for key 'PRIMARY'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 497, in insert
+    self.db_insert(ignore_if_duplicate=ignore_if_duplicate)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 793, in db_insert
+    raise frappe.DuplicateEntryError(self.doctype, self.name, e)
+frappe.exceptions.DuplicateEntryError: ('Leave Type', '12', IntegrityError(1062, "Duplicate entry '12' for key 'PRIMARY'"))
+2026-10-06 12:23:49,039 WARNING data_import Data Import Leave Type Import on 2026-10-06 12:23:37.766196: 1 of 5 rows failed
+2026-10-06 12:33:45,636 ERROR data_import Data Import Leave Type Import on 2026-10-06 12:33:33.866321: row(s) [3] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 766, in db_insert
+    name = frappe.db.sql(
+    	"""INSERT INTO `tab{doctype}` ({columns})
+    ...<7 lines>...
+    	list(d.values()),
+    )
+  File "/home/gowri/my-bench/apps/frappe/frappe/database/database.py", line 272, in sql
+    self.execute_query(query, values)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/database/database.py", line 372, in execute_query
+    return self._cursor.execute(query, values)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/env/lib/python3.14/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "/home/gowri/my-bench/env/lib/python3.14/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "/home/gowri/my-bench/env/lib/python3.14/site-packages/MySQLdb/connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.IntegrityError: (1062, "Duplicate entry '12' for key 'total_days'")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 497, in insert
+    self.db_insert(ignore_if_duplicate=ignore_if_duplicate)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 797, in db_insert
+    self.show_unique_validation_message(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 873, in show_unique_validation_message
+    raise frappe.UniqueValidationError(self.doctype, self.name, e)
+frappe.exceptions.UniqueValidationError: ('Leave Type', 'Sick Leave', IntegrityError(1062, "Duplicate entry '12' for key 'total_days'"))
+2026-10-06 12:33:45,667 WARNING data_import Data Import Leave Type Import on 2026-10-06 12:33:33.866321: 1 of 5 rows failed
+2026-10-07 09:42:11,587 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [2] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 828, in _validate
+    self._validate_mandatory()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 1202, in _validate_mandatory
+    raise frappe.MandatoryError(
+    ...<3 lines>...
+    )
+frappe.exceptions.MandatoryError: [Customer, CUST-001]: driving_licence_no
+2026-10-07 09:42:11,602 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [3] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 828, in _validate
+    self._validate_mandatory()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 1202, in _validate_mandatory
+    raise frappe.MandatoryError(
+    ...<3 lines>...
+    )
+frappe.exceptions.MandatoryError: [Customer, CUST-002]: driving_licence_no
+2026-10-07 09:42:11,611 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [4] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 828, in _validate
+    self._validate_mandatory()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 1202, in _validate_mandatory
+    raise frappe.MandatoryError(
+    ...<3 lines>...
+    )
+frappe.exceptions.MandatoryError: [Customer, CUST-003]: driving_licence_no
+2026-10-07 09:42:11,617 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [5] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 828, in _validate
+    self._validate_mandatory()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 1202, in _validate_mandatory
+    raise frappe.MandatoryError(
+    ...<3 lines>...
+    )
+frappe.exceptions.MandatoryError: [Customer, CUST-004]: driving_licence_no
+2026-10-07 09:42:11,621 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [6] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 828, in _validate
+    self._validate_mandatory()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 1202, in _validate_mandatory
+    raise frappe.MandatoryError(
+    ...<3 lines>...
+    )
+frappe.exceptions.MandatoryError: [Customer, CUST-005]: driving_licence_no
+2026-10-07 09:43:16,994 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [2] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:17,004 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [3] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:17,011 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [4] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:17,019 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [5] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:17,025 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [6] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:38,737 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [2] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:38,743 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [3] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:38,749 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [4] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:38,755 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [5] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:43:38,760 ERROR data_import Data Import Customer Import on 2026-10-07 09:41:49.335892: row(s) [6] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:44:24,331 ERROR data_import Data Import Customer Import on 2026-10-07 09:44:09.409419: row(s) [2] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:44:24,337 ERROR data_import Data Import Customer Import on 2026-10-07 09:44:09.409419: row(s) [3] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:44:24,348 ERROR data_import Data Import Customer Import on 2026-10-07 09:44:09.409419: row(s) [4] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:44:24,353 ERROR data_import Data Import Customer Import on 2026-10-07 09:44:09.409419: row(s) [5] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.
+2026-10-07 09:44:24,362 ERROR data_import Data Import Customer Import on 2026-10-07 09:44:09.409419: row(s) [6] failed to import
+Traceback (most recent call last):
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 154, in import_data
+    doc = self.process_doc(doc)
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 270, in process_doc
+    return self.insert_record(doc)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/core/doctype/data_import/importer.py", line 289, in insert_record
+    new_doc.insert()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 487, in insert
+    self._validate()
+    ~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/document.py", line 829, in _validate
+    self._validate_data_fields()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/model/base_document.py", line 1144, in _validate_data_fields
+    validate_phone_number_with_country_code(phone, phone_field.fieldname)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/__init__.py", line 133, in validate_phone_number_with_country_code
+    frappe.throw(
+    ~~~~~~~~~~~~^
+    	error_message.format(frappe.bold(phone_number), frappe.bold(fieldname)),
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    	title=error_title,
+     ^^^^^^^^^^^^^^^^^^
+    	exc=frappe.InvalidPhoneNumberError,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 159, in throw
+    msgprint(
+    ~~~~~~~~^
+    	msg,
+     ^^^^
+    ...<7 lines>...
+    	allow_dangerous_html=allow_dangerous_html,
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 118, in msgprint
+    _raise_exception()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/gowri/my-bench/apps/frappe/frappe/utils/messages.py", line 59, in _raise_exception
+    raise exc
+frappe.exceptions.InvalidPhoneNumberError: Please select a country code for field mobile_no.

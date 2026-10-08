@@ -17,5 +17,25 @@
         "required": [],
         "idx": 2,
         "version": "0.0.1"
+    },
+    "car_rental": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "3b8971ac6acca1b37fda1461231eae87e9e4ac40",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "employee_management_system": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "e805a0ceee633749ec6032d3bffc3823b4e9d1e9",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
     }
 }

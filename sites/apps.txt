@@ -1,2 +1,4 @@
 frappe
+car_rental
 hotel
+employee_management_system

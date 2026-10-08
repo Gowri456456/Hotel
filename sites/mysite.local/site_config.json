@@ -1,10 +1,14 @@
 {
+ "backup_encryption_key": "S7A00NNALX2y31q-SIqXo_gfmXOH2gHe9shpElLpP1U=",
  "db_name": "_adc7c35caaee668c",
  "db_password": "Aof4q0T9yZoUjqEK",
  "db_type": "mariadb",
  "db_user": "_adc7c35caaee668c",
+ "developer-mode": 1,
  "installed_apps": [
   "frappe",
-  "hotel"
- ]
+  "hotel",
+  "car_rental"
+ ],
+ "serve_default_site": true
 }
